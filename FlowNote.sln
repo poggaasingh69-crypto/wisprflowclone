@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1EFDA4B3-BB6A-419D-A8D1-EDA0D587E849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowNote.App", "src\FlowNote.App\FlowNote.App.csproj", "{FEF7D487-A712-487E-ABD0-B38D9DD87448}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowNote.Core", "src\FlowNote.Core\FlowNote.Core.csproj", "{B84FE328-5906-456E-B35D-231D920C09F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowNote.Audio", "src\FlowNote.Audio\FlowNote.Audio.csproj", "{F31D8EF5-0AD5-4F9D-A4D6-1C902B58542D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowNote.Transcription", "src\FlowNote.Transcription\FlowNote.Transcription.csproj", "{09136B88-41CC-4462-BD53-2BFF4CD11759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowNote.Injection", "src\FlowNote.Injection\FlowNote.Injection.csproj", "{FF48C9A7-2403-4706-900E-60E23A3F4443}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{076DE539-650E-419D-9D8F-DB464226A176}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowNote.Core.Tests", "tests\FlowNote.Core.Tests\FlowNote.Core.Tests.csproj", "{B495B4C9-78E3-4CD1-879D-38242A6DA518}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEF7D487-A712-487E-ABD0-B38D9DD87448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEF7D487-A712-487E-ABD0-B38D9DD87448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEF7D487-A712-487E-ABD0-B38D9DD87448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEF7D487-A712-487E-ABD0-B38D9DD87448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84FE328-5906-456E-B35D-231D920C09F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84FE328-5906-456E-B35D-231D920C09F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84FE328-5906-456E-B35D-231D920C09F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84FE328-5906-456E-B35D-231D920C09F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F31D8EF5-0AD5-4F9D-A4D6-1C902B58542D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F31D8EF5-0AD5-4F9D-A4D6-1C902B58542D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F31D8EF5-0AD5-4F9D-A4D6-1C902B58542D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F31D8EF5-0AD5-4F9D-A4D6-1C902B58542D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09136B88-41CC-4462-BD53-2BFF4CD11759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09136B88-41CC-4462-BD53-2BFF4CD11759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09136B88-41CC-4462-BD53-2BFF4CD11759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09136B88-41CC-4462-BD53-2BFF4CD11759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF48C9A7-2403-4706-900E-60E23A3F4443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF48C9A7-2403-4706-900E-60E23A3F4443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF48C9A7-2403-4706-900E-60E23A3F4443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF48C9A7-2403-4706-900E-60E23A3F4443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B495B4C9-78E3-4CD1-879D-38242A6DA518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B495B4C9-78E3-4CD1-879D-38242A6DA518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B495B4C9-78E3-4CD1-879D-38242A6DA518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B495B4C9-78E3-4CD1-879D-38242A6DA518}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FEF7D487-A712-487E-ABD0-B38D9DD87448} = {1EFDA4B3-BB6A-419D-A8D1-EDA0D587E849}
+		{B84FE328-5906-456E-B35D-231D920C09F4} = {1EFDA4B3-BB6A-419D-A8D1-EDA0D587E849}
+		{F31D8EF5-0AD5-4F9D-A4D6-1C902B58542D} = {1EFDA4B3-BB6A-419D-A8D1-EDA0D587E849}
+		{09136B88-41CC-4462-BD53-2BFF4CD11759} = {1EFDA4B3-BB6A-419D-A8D1-EDA0D587E849}
+		{FF48C9A7-2403-4706-900E-60E23A3F4443} = {1EFDA4B3-BB6A-419D-A8D1-EDA0D587E849}
+		{B495B4C9-78E3-4CD1-879D-38242A6DA518} = {076DE539-650E-419D-9D8F-DB464226A176}
+	EndGlobalSection
+EndGlobal
