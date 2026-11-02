@@ -1,0 +1,28 @@
+# Environment files and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Dependencies and generated build output
+node_modules/
+bin/
+obj/
+dist/
+build/
+target/
+out/
+
+# Audio recordings and microphone test captures
+recordings/
+recording/
+audio/
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.aac
