@@ -34,13 +34,7 @@ These instructions are permanent for this repository. Read them at the start of 
 - If git push fails on authentication, stop and tell David. David authenticates Git/GitHub CLI himself; you do not sign in for him.
 - Do not force-push main, do not rewrite published history, and pull --ff-only before starting new work to avoid conflicts with Edison and his commits.
 
-## Current state and known backlog (2026-11-03)
-- Research phase draft exists in research/wispr-observation.md and its proposed MVP is: global push-to-talk hotkey, recording pill, local transcription, AI cleanup, and insertion of text into other apps at the cursor.
-- Current app FlowNote.ps1 is a PowerShell WinForms spike using Windows System.Speech. It only dictates into its own editor. It is NOT the full MVP yet.
-- Edison review fixes requested for FlowNote.ps1, in order:
-  1. Clear the recognitionEvents queue on stop and on start; ignore queued events after stop.
-  2. Warn on window close if the editor has unsaved text.
-  3. Do not Dispose the recognizer immediately after RecognizeAsyncCancel; stop cleanly.
-  4. Default the language picker to the recognizer matching CurrentCulture when present.
-  5. Fix the 15-second silence detection to use a sustained audio-level window, not one consumed sample.
-- After those fixes, the next spike is: global hotkey, speak, insert final text into Notepad via clipboard paste (saving and restoring the previous clipboard), keeping the FlowNote editor as fallback. Report results before any rewrite to another stack.
+## Current state — FROM-SCRATCH BUILD (supersedes all earlier backlog notes)
+- David decided on 2026-11-03 to build Wispr Flow from scratch. The PowerShell FlowNote.ps1 app is a throwaway spike that will be moved to legacy/powershell-spike/. Do NOT fix its earlier review bugs and do NOT build new features on it.
+- New stack: C# / .NET 8 / WPF. Product contract: docs/SPEC.md. Design: docs/ARCHITECTURE.md. Build order: docs/ROADMAP.md, one phase at a time, with an Edison review gate between phases.
+- Current order from Edison is in EDISON_RESPONSE.md: Phase 0 (foundation) only.
